@@ -78,6 +78,12 @@ document.addEventListener("keypress", (e) => {
   }
 });
 
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', ()=> {
+  getImages();
+  inputBox.value = "";
+});
+
 inputBox.addEventListener("keypress", (e) => {
   // e.preventDefault();
   // page = 1;
