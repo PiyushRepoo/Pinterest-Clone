@@ -142,7 +142,7 @@ body {
     background-size: cover;
 }
 
-@meadi (max-width: 600px){
+@meadia only screen and (max-width: 600px){
   .navbar img,
   .navbar ul,
   .navbar .right {
