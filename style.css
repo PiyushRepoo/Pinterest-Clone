@@ -97,6 +97,13 @@ body {
   transform: translateY(-50%);
 }
 
+#btn {
+  display: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+}
+
 .navbar .right {
   display: flex;
   justify-content: center;
@@ -147,5 +154,9 @@ body {
   .navbar ul,
   .navbar .right {
     display: none;
+  }
+
+  #btn {
+  display: block;
   }
 }
