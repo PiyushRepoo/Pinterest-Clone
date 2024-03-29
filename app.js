@@ -82,6 +82,7 @@ const btn = document.querySelector('.btn');
 btn.addEventListener('click', ()=> {
   getImages();
   inputBox.value = "";
+  document.body.style.backgroundColor = "red";
 });
 
 inputBox.addEventListener("keypress", (e) => {
