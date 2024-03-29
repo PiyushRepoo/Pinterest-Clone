@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #000;
+  --secondary: #fff;
+  --Poppins: "Poppins", sans-serif;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* utility */
+.hover:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  padding: 1rem 10px;
+  background-color: var(--secondary);
+  position: fixed;
+  top: 0;
+}
+
+.navbar img {
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.3rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar ul li a.active {
+  background: #000;
+  color: var(--secondary);
+  border-radius: 50px;
+  padding: 14px;
+}
+
+.navbar .input {
+  flex-grow: 1;
+  margin: 0 1rem;
+  display: flex;
+  position: relative;
+}
+
+.navbar .input #inputBox {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #e1e1e173;
+  padding: 14px 40px 12px;
+  border-radius: 50px;
+  font-family: var(--Poppins);
+}
+
+.navbar .input #inputBox:focus + label i {
+  display: none;
+}
+
+.navbar .input #inputBox:focus {
+  border: 4px solid #7fc1ff;
+  padding: 14px 12px 12px;
+}
+
+.navbar .input label i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.navbar .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .right i {
+  color: #545353a0;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.navbar .right span {
+  background-color: rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  padding: 15px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBox {
+    margin: 6rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.mainBox .image img {
+    max-width: 26vw;
+    max-height: 26vh;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
