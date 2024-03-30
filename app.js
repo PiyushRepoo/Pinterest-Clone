@@ -5,7 +5,6 @@ const apiKey = "cObNu90NGETWRWHjrcu4XVZQTU7YiLhPLrwLxEASHLAyguhQlXsKcvQc";
 const inputBox = document.getElementById("inputBox");
 const mainBox = document.querySelector(".mainBox");
 const main = document.querySelector("main");
-console.log(mainBox);
 const img = document.querySelector("img");
 
 let keyword = "";
@@ -80,6 +79,7 @@ document.addEventListener("keypress", (e) => {
 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', ()=> {
+  mainBox.innerHTML = '';
   getImages();
   inputBox.value = "";
   //document.body.style.backgroundColor = "red";
@@ -93,6 +93,7 @@ inputBox.addEventListener("keypress", (e) => {
   if (e.code == "Enter") {
     // searchImages();
     // main.firstElementChild.remove();
+    mainBox.innerHTML = '';
     getImages();
     inputBox.value = "";
   }
